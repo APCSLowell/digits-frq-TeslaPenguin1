@@ -9,7 +9,7 @@ public class Digits
 	{
 		int length = ((Integer)num).toString().length();
 		for(int i = 0; i < length; i++) {
-			digitList.add(0, num/Math.pow(10,i) % 10);
+			digitList.add(0, num/(int)(Math.pow(10,i)) % 10);
 		}
 	}
 
