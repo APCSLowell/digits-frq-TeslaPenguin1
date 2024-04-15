@@ -7,6 +7,7 @@ public class Digits
 
 	public Digits(int num)
 	{
+		digitList = new ArrayList<Integer>();
 		int length = ((Integer)num).toString().length();
 		for(int i = 0; i < length; i++) {
 			digitList.add(0, num/(int)(Math.pow(10,i)) % 10);
